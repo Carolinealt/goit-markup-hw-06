@@ -48,6 +48,7 @@ ul {
     display: none;
 }
 
+
 .link {
     text-decoration: none;
     color: var(--color-brand);
@@ -1062,6 +1063,7 @@ header {
 }
 
 @media (max-width:768px) {
+    
     .adv-cont-icon {
         display: none;
     }
