@@ -223,7 +223,9 @@ header {
 /*---------------------------- advantages-container------------------ */
 
 .advantages {
-    padding: 120px 0 120px;
+    /* padding: 120px 0 120px;MF */
+    padding: 96px 16px;
+
 }
 
 .visually-hidden {
@@ -241,11 +243,12 @@ header {
 }
 
 .adv-cont-icon {
-    display: flex;
+    /* display: flex;mf */
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: #f4f4fd;
-
+    width: 100%;
     margin: 0 auto;
     padding: 24px 100px;
     border-radius: 4px;
@@ -269,23 +272,14 @@ header {
 
 .adv-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
-/* .adv-item::before {
-  content: "";
-  background-color: #f4f4fd;
-  width: 264px;
-  height: 112px;
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-.adv-item:first-child:before {
-  background-image: url(../images/antenna-1.svg); */
 
 .adv-item {
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    width: 100%;
     gap: 24;
 }
 
@@ -315,6 +309,7 @@ header {
 
 .adv-list {
     gap: 24px;
+
 }
 
 .list-specialization {
@@ -870,7 +865,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     fill: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -948,4 +943,46 @@ header {
 .modal-send:hover,
 .modal-send:focus {
     background-color: rgba(64, 75, 191, 1);
+}
+
+@media screen and (min-width:428px) {
+    .container {
+        max-width: 428px;
+    }
+
+    .adv-item {}
+
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 766px;
+
+    }
+
+    .adv-item {
+        max-width: unset;
+        width: calc((100% - 24px) / 2);
+
+    }
+}
+
+@media screen and (min-width:1158px) {
+    .container {
+        max-width: 1158px;
+
+    }
+
+    .adv-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .adv-item {
+        width: calc((100% - 72px) / 4);
+        width: 100%;
+        gap: 24;
+    }
+
+
 }
