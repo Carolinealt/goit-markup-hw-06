@@ -1144,6 +1144,14 @@ header {
         display: none;
     }
 
+    .link-logo{
+        margin-top: 24px;
+    }
+
+    .header{
+        height: 70px;
+    }
+
     .hero {
         background-color: var(--color-brand);
         background-image: linear-gradient(180deg,
@@ -1242,6 +1250,16 @@ header {
 
     .burger-btn {
         display: block;
+        width: 32px;
+        height: 3px;
+        background-color: var(--background--main-color);
+        border-radius: 2px;
+        box-shadow: 0 10px 0 0 var(--color-brand), 0 20px 0 0 var(--main-title-color);
+    }
+
+    .burger-btn span {
+        display: block;
+
     }
 
     .mob-menu {
