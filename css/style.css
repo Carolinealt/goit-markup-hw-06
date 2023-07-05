@@ -936,6 +936,10 @@ header {
     fill: rgba(46, 47, 66, 1);
 }
 
+.burger{
+    
+}
+
 .btn-modal:hover .modal-icon,
 .btn-modal:focus .modal-icon {
     fill: #ffffff;
