@@ -1063,7 +1063,7 @@ header {
 
     }
 
-    .customers-sec .container{
+    .customers-sec .container {
         width: 584px;
     }
 
@@ -1150,7 +1150,7 @@ header {
         padding-right: 15px;
     }
 
-    .container-header{
+    .container-header {
         height: 70px;
     }
 
@@ -1158,12 +1158,9 @@ header {
         display: none;
     }
 
-    .header-address .address-list {
-        display: none;
-    }
 
-    .link-logo {
-    }
+
+    .link-logo {}
 
     .header {
         height: 70px;
@@ -1186,7 +1183,7 @@ header {
         padding: 96px 0;
     }
 
-    .adv-item .part-title{
+    .adv-item .part-title {
         text-align: center;
     }
 
@@ -1257,7 +1254,7 @@ header {
         text-align: center;
     }
 
-    .social-media-footer{
+    .social-media-footer {
         margin-bottom: 72px;
     }
 
@@ -1288,7 +1285,7 @@ header {
     }
 
     .mob-menu {
-        display: block;
+        display: flex;
         position: fixed;
         top: 0;
         left: 0;
@@ -1302,6 +1299,9 @@ header {
     }
 
     .menu-close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
         width: 24px;
         height: 24px;
         display: block;
@@ -1331,18 +1331,22 @@ header {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.1;
+        flex-grow: 1;
 
     }
 
     .mob-flex {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         height: 100%;
     }
 
     .active {
         color: rgba(64, 75, 191, 1);
+    }
+
+    .mob-menu-list {
+        margin-top: 0;
     }
 
     .mob-menu-item {
@@ -1360,6 +1364,11 @@ header {
         color: rgba(64, 75, 191, 1);
     }
 
+    .header-address-menu .address-list{
+        flex-grow: 1;
+
+    }
+
     .address-list-item {
         padding-bottom: 48px;
     }
@@ -1370,6 +1379,8 @@ header {
         font-size: 20px;
         line-height: 1.2;
     }
+
+
 
     .address-link-tel {
         font-weight: 700;
@@ -1389,5 +1400,12 @@ header {
     .modal-send {
         display: block;
         margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .address-link-tel {
+        font-size: 25px;
+
     }
 }
