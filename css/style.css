@@ -982,10 +982,11 @@ header {
 
     .adv-list {
         gap: 72px 24px;
+        width: auto;
     }
 
     .adv-item {
-        /* width: calc((100% - 24px)/2); */
+        width: calc((100% - 24px)/2);
 
 
     }
