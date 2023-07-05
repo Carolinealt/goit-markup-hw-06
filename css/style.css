@@ -1248,9 +1248,14 @@ header {
         height: 100%;
         background-color: rgba(255, 255, 255, 1);
         padding: 40px;
+        pointer-events: none;
+        visibility: hidden;
 
     }
-
+    .mob-menu.is-open{
+        pointer-events: auto;
+        visibility: visible;
+    }
     .btn-modal-menu {
     }
 
