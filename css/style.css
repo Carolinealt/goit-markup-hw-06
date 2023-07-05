@@ -174,7 +174,7 @@ header {
     color: #404bbf;
 }
 
-.burger{
+.burger {
     /* fill: red; */
 }
 
@@ -918,9 +918,7 @@ header {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-modal-menu {
-
-}
+.btn-modal-menu {}
 
 .btn-modal:hover,
 .btn-modal:focus {
@@ -936,9 +934,7 @@ header {
     fill: rgba(46, 47, 66, 1);
 }
 
-.burger{
-    
-}
+.burger {}
 
 .btn-modal:hover .modal-icon,
 .btn-modal:focus .modal-icon {
@@ -1248,16 +1244,14 @@ header {
         height: 100%;
         background-color: rgba(255, 255, 255, 1);
         padding: 40px;
-        pointer-events: none;
-        visibility: hidden;
+        /* pointer-events: none;
+        visibility: hidden; */
+        left: 0;
+        transform: translateX(100%);
 
     }
-    .mob-menu.is-open{
-        pointer-events: auto;
-        visibility: visible;
-    }
-    .btn-modal-menu {
-    }
+
+    .btn-modal-menu {}
 
     .close-menu-btn {}
 
