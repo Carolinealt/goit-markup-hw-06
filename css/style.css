@@ -965,6 +965,12 @@ header {
     .hero {
         padding: 112px 0;
     }
+    .hero {
+        background-color: var(--color-brand);
+        background-image: linear-gradient(180deg,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/TAB2x/Dark-bgTAB2x.jpg);}
 
     .adv-cont-icon {
         display: none;
@@ -1112,6 +1118,13 @@ header {
     .header-address .address-list {
         display: none;
     }
+
+    .hero {
+        background-color: var(--color-brand);
+        background-image: linear-gradient(180deg,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Mob2x/Dark-bgMob2x.jpg);}
 
     .hero-title {
         font-size: 36px;
