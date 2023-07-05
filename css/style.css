@@ -712,6 +712,15 @@ header {
 
 }
 
+.form-sub {
+    flex-wrap: wrap;
+}
+
+
+.f-wrapper {
+
+    flex-wrap: wrap
+}
 
 /*------------------------------------backdrop---------------------- */
 .backdrop {
@@ -1108,9 +1117,6 @@ header {
     }
 
 
-    .form-sub {
-        flex-wrap: wrap;
-    }
 }
 
 
