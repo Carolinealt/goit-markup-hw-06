@@ -189,7 +189,7 @@ header {
     background-image: linear-gradient(180deg,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/desk/people-office/DESK2X.jpg);
+        url(../images/desk/people-office\ DESK2X.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 1440px;
@@ -396,7 +396,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1128px;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 24px;
@@ -424,7 +423,6 @@ header {
 
 .customers-item {
     background-color: transparent;
-    min-width: 168px;
     height: 88px;
     border-radius: 4px;
 }
@@ -1000,7 +998,15 @@ header {
             url(../images/TAB2x/Dark-bgTAB2x.jpg);
     }
 
-    .address-list-item {
+    .address-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: auto;
+        gap: 12px;
+    }
+
+    .address-link {
         font-size: 12px;
         line-height: 1.16;
     }
@@ -1101,10 +1107,7 @@ header {
         text-align: left;
     }
 
-    .address-list {
-        flex-direction: column;
-        gap: 0;
-    }
+
 
     .address-list-item {
         font-size: 12px;
@@ -1205,11 +1208,19 @@ header {
     .customers-list {
         gap: 72px 16px;
         width: auto;
+        gap: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 72px;
     }
 
     .customers-sec {
         padding: 96px 0;
         width: auto;
+    }
+
+    .customers-sec .container {
+        width: 100%;
     }
 
     .customers-item {
@@ -1263,7 +1274,7 @@ header {
     }
 
     .sub-email {
-        width: 398px;
+        width: 100vw;
     }
 
     .text-sub {
@@ -1364,13 +1375,13 @@ header {
         color: rgba(64, 75, 191, 1);
     }
 
-    .header-address-menu .address-list{
+    .header-address-menu .address-list-mob {
         flex-grow: 1;
 
     }
 
     .address-list-item {
-        padding-bottom: 48px;
+        margin: 48px;
     }
 
     .header-address-menu .address-link-email {
@@ -1380,6 +1391,10 @@ header {
         line-height: 1.2;
     }
 
+    .header-address-desk {
+        display: none;
+    }
+
 
 
     .address-link-tel {
@@ -1387,6 +1402,10 @@ header {
         font-size: 36px;
         color: rgba(77, 90, 229, 1);
         max-width: 353px;
+    }
+
+    .team-icon-list {
+        margin-top: 0;
     }
 
     .team-icon-list.mob-icon {
@@ -1401,11 +1420,27 @@ header {
         display: block;
         margin: 0 auto;
     }
+
+    .footer-container {
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
 }
 
 @media screen and (max-width:320px) {
     .address-link-tel {
         font-size: 25px;
+    }
 
+    .team-icon-list.mob-icon{
+        justify-content: left;
+        gap: 12px;
+    }
+
+    .address-list-item{
+        margin: 0 0 48px;
     }
 }
