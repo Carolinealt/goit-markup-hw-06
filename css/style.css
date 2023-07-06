@@ -1142,6 +1142,14 @@ header {
         margin-bottom: 72px;
     }
 
+    .hero {
+        background-color: var(--color-brand);
+        background-image: linear-gradient(180deg,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/Mob2x/Dark-bgMob2x.jpg);
+    }
+
 
 }
 
@@ -1428,6 +1436,12 @@ header {
         justify-content: center;
 
     }
+
+    .address-list-mob .address-list-item {
+        margin: 0 0 48px;
+
+    }
+
 }
 
 @media screen and (max-width:320px) {
@@ -1435,12 +1449,12 @@ header {
         font-size: 25px;
     }
 
-    .team-icon-list.mob-icon{
+    .team-icon-list.mob-icon {
         justify-content: left;
         gap: 12px;
     }
 
-    .address-list-item{
+    .address-list-mob .address-list-item {
         margin: 0 0 48px;
     }
 }
